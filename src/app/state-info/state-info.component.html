@@ -1,8 +1,36 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h1>StateWise Report</h1>
+            <h1 class="mt-1">State Wise</h1>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Confirm</th>
+                    <th scope="col">Death</th>
+                    <th scope="col">Recovered</th>
+                    <th scope="col">Active</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let index of this.stateDetails;let i=index;">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{this.stateDetails[i].stateName}}</td>
+                    <td>{{this.stateDetails[i].confirmed}}</td>
+                    <td style=" font-weight: 900;">{{this.stateDetails[i].deaths}}</td>
+                    <td>{{this.stateDetails[i].recovered}}</td>
+                    <td>{{this.stateDetails[i].active}}</td>
+                  </tr>
+                
+                </tbody>
+              </table>
+            <!-- <pre>
+                {{this.stateDetails[1] | json}}
+
+            </pre> -->
         </div>
-       
+        
     </div>
 </div>

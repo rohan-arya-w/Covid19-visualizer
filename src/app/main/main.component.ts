@@ -8,28 +8,27 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MainComponent implements OnInit {
   
-    stateDetails=[];
-    arr;
-    a;
+    Global=[]
+    
   
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
 
-    this.http.get('https://api.covid19india.org/data.json').subscribe(posts => {
-  
-      posts["statewise"].forEach(i => {
+    this.http.get('https://api.covid19api.com/summary').subscribe(posts => {
+
+      posts["Global"].forEach(i => {
         let obj = {};
-        obj["stateName"] = i["state"];
-        obj["confirmed"] = i["confirmed"];
-        obj["deaths"] = i["deaths"];
-        obj["recovered"] = i["recovered"];
-        obj["active"] = i["active"];
-        this.stateDetails.push(obj);
+        
+        obj["Total"] = i["TotalConfirmed"];
+        obj["deaths"] = i["TotalDeaths"];
+        obj["recovered"] = i["TotalRecovered"];
+        this.Global.push(obj);
         
       })
-      this.stateDetails.push(this.stateDetails.shift());
-      console.log(this.stateDetails[1].stateName)
+      this.Global.push(this.Global.shift());
+      console.log(this.Global)
+      
     })
   }
 

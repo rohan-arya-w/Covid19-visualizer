@@ -1,35 +1,42 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h1>Dashboard</h1>
-            <table class="table">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">State</th>
-                    <th scope="col">Confirm</th>
-                    <th scope="col">Death</th>
-                    <th scope="col">Recovered</th>
-                    <th scope="col">Active</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let index of this.stateDetails;let i=index;">
-                    <th scope="row">{{i+1}}</th>
-                    <td>{{this.stateDetails[i].stateName}}</td>
-                    <td>{{this.stateDetails[i].confirmed}}</td>
-                    <td>{{this.stateDetails[i].deaths}}</td>
-                    <td>{{this.stateDetails[i].recovered}}</td>
-                    <td>{{this.stateDetails[i].active}}</td>
-                  </tr>
-                
-                </tbody>
-              </table>
-            <!-- <pre>
-                {{this.stateDetails[1] | json}}
+            <h1 class="ml-1 mt-2 text-center">Global Statistics</h1>
+            <div class="row mt-4">
+              <div class="col-lg-4">
+                <div class="card bg-light mb-3">
+                  <div class="card-body text-primary  rounded">
+                    <h1>Total Cases</h1>
+                    <h5>6258702</h5>
+                  </div>
+                  
+                </div>
+              </div>
 
-            </pre> -->
+              <div class="col-lg-4">
+                <div class="card bg-light mb-3">
+                  <div class="card-body text-danger">
+                    <h1>Total Deaths</h1>
+                    <h5>379392</h5>
+                  </div>
+                  
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card bg-light mb-3">
+                  <div class="card-body text-success">
+                    <h1>Total Recovered</h1>
+                    <h5>2640678</h5>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+            
+            
+           
         </div>
         
     </div>

@@ -1,3 +1,25 @@
-<div class="userInfo">
+<div class="maindashboard">
+    <div class="container">
+        <div class="row" >
+            <div class="col-lg-12 pt-5">
+                <h1 class="text-center mb-5">News</h1>
+                <div class="card mt-3 cards" *ngFor="let index of this.News;let i =index">
+                    
+                    <div class="card-body">
+                      
+                      <h2 class="card-title">{{this.News[i].Title}}</h2>
+                      <p class="card-text text-right"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    
+    
+    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     
 </div>
+
+
