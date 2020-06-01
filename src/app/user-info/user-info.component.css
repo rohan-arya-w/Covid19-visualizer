@@ -1,0 +1,11 @@
+.userInfo {
+    position: fixed;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    border: 0px solid #000000;
+    background-color: #cf7500;
+    margin-top: 30px;
+    height: 90%;
+    width: 30%;    
+  }
