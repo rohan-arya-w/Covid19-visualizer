@@ -1,0 +1,23 @@
+.template1 {
+    margin-top: 200px;
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    padding: 80px;
+    padding-top: 150px;
+    border-radius: 0px 0px 0px 42px;
+    -moz-border-radius: 0px 0px 0px 42px;
+    -webkit-border-radius: 0px 0px 0px 42px;
+    border: 0px solid #000000;
+    z-index: 10;
+  }
+  
+  .template2 {
+    margin-top: 200px;
+    width: 800px;
+    height: 800px;
+    background-color: rgb(253, 157, 67);
+    border-radius: 0px 42px 0px 0px;
+    -moz-border-radius: 0px 42px 0px 0px;
+    -webkit-border-radius: 0px 42px 0px 0px;
+  }

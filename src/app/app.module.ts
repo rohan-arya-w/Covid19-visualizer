@@ -11,6 +11,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { StateInfoComponent } from './state-info/state-info.component';
 import { LatestNewsComponent } from './latest-news/latest-news.component';
 import { StaySafeComponent } from './stay-safe/stay-safe.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterFormComponent } from './register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { StaySafeComponent } from './stay-safe/stay-safe.component';
     UserInfoComponent,
     StateInfoComponent,
     LatestNewsComponent,
-    StaySafeComponent
+    StaySafeComponent,
+    LoginPageComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,
