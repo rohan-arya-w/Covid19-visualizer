@@ -1,50 +1,44 @@
+<div class="container" style="border-color: #2f2f2f;">
 
+    <div class="row">
 
+        <div class="col-4 template1">
+            <img src="assets/image/virus2.png" style="height: 420px;width: auto;">
+        </div>
+        <div class="col-8 template2">
+            <h1 class="text-center" style="margin-top: 100px;">Login Page</h1>
+            <div class="row">
+                <div class="col-8" style="position: absolute;left: 20%;top: 32%;">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type=" text " class="form-control" formControlName="email" placeholder="E-mail"
+                                [ngClass]="{'error':!loginDetails.get('email').valid && valid,'valid':loginDetails.get('email').valid}">
+                            <span *ngIf="!loginDetails.get('email').valid && valid" style="color: red;">Please enter a
+                                valid E-mail id</span>
 
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="domainName" formControlName="password" placeholder="Password" [ngClass]="{'error':!loginDetails.get('password').valid && valid ,'valid':loginDetails.get('password').valid}">
+                <span *ngIf="!loginDetails.get('password').valid && valid" style="color: red;">Please enter a password</span>
+                        </div>
 
+                        <div class="col-12 text-center">
+                            <button type="submit " class="btn btn-dark mt-3" style="width: 200px;">Submit</button>
 
+                        </div>
+                    </form>
 
-    <div class="container" style="border-color: #2f2f2f;">
-        
-        <div class="row">
-            
-            <div class="col-4 template1">
-    <img src="assets/image/virus2.png" style="height: 420px;width: auto;" >
-            </div>
-            <div class="col-8 template2">
-                <h1 class="text-center" style="margin-top: 100px;">Login Page</h1>
-                <div class="row">
-                    <div class="col-8" style="position: absolute;left: 20%;top: 32%;">
-                        <form>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                             
-                            </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
-                            </div>
-                            
-                            <div class="col-12 text-center">
-                                <button type="submit " class="btn btn-dark mt-3" style="width: 200px;">Submit</button>
-
-                            </div>
-                          </form>
-
-                    </div>
                 </div>
             </div>
-            
         </div>
-    
-    
-    
-    
-    
-    
+
     </div>
 
 
 
 
+
+
+</div>
